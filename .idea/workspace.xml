@@ -5,28 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a302cf36-036a-4716-9165-72a0f2ec22bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2015_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2015_5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2015_6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2015_7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D3Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D4Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D6Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +38,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2JGxRI2OAuik2w4IlQCTaDfh3k9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,11 +61,13 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/gennaro/code/AdventOfCode/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -97,7 +85,7 @@
       <recent name="dev.coppola.adventofcode.Y2015" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.D7Test.testCommandProcessing">
+  <component name="RunManager" selected="JUnit.D7Test">
     <configuration name="D7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
@@ -130,22 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D7Test.notOp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.coppola.adventofcode.Y2015.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
-      <option name="METHOD_NAME" value="notOp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="D7Test.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
@@ -157,6 +129,22 @@
       <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
       <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
       <option name="METHOD_NAME" value="part1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D7Test.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.coppola.adventofcode.Y2015.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
+      <option name="METHOD_NAME" value="part2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.D7Test" />
+        <item itemvalue="JUnit.D7Test.part2" />
         <item itemvalue="JUnit.D7Test.testCommandProcessing" />
         <item itemvalue="JUnit.D7Test.part1" />
-        <item itemvalue="JUnit.D7Test" />
         <item itemvalue="JUnit.D7Test.andOpTests" />
-        <item itemvalue="JUnit.D7Test.notOp" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +194,9 @@
       <workItem from="1688290434664" duration="297000" />
       <workItem from="1688290969414" duration="14814000" />
       <workItem from="1688749256564" duration="2802000" />
+      <workItem from="1695620369344" duration="1288000" />
+      <workItem from="1695621995525" duration="2000" />
+      <workItem from="1695622851676" duration="7272000" />
     </task>
     <servers />
   </component>

@@ -26,8 +26,14 @@ class D7Test {
         String[] lines = test.split("\\n");
         Arrays.stream(lines).forEach(d7::interpret);
 
-        assertEquals(8, d7.vars.size());
-        
+        assertEquals(72, d7.getWire("d"));
+        assertEquals(507, d7.getWire("e"));
+        assertEquals(492, d7.getWire("f"));
+        assertEquals(114, d7.getWire("g"));
+        assertEquals(65412, d7.getWire("h"));
+        assertEquals(65079, d7.getWire("i"));
+        assertEquals(123, d7.getWire("x"));
+        assertEquals(456, d7.getWire("y"));
 
         System.out.println(d7);
     }
@@ -35,12 +41,12 @@ class D7Test {
     @Test
     void part1() {
         D7 d7 = new D7();
-        assertEquals("0", d7.part1(Utils.readFileAsStream("2015_7.txt")));
+        assertEquals("46065", d7.part1(Utils.readFileAsStream("2015_7.txt")));
     }
 
     @Test
     void part2() {
         D7 d7 = new D7();
-        assertEquals("15343601", d7.part2(Utils.readFileAsStream("2015_7.txt")));
+        assertEquals("14134", d7.part2(Utils.readFileAsStream("2015_7.txt")));
     }
 }
