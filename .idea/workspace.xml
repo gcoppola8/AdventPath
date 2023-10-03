@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a302cf36-036a-4716-9165-72a0f2ec22bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a302cf36-036a-4716-9165-72a0f2ec22bb" name="Changes" comment="added 2015 - day 7 complete">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_commons_text.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jgrapht_core.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/2015_9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D9Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D7Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/filesorted.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,11 +36,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/../../../../Program Files/Eclipse Adoptium/jdk-17.0.2.8-hotspot/lib/src.zip!/java.base/java/util/HashMap.java" root0="SKIP_INSPECTION" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="D7Test.notOp" />
-    </enabled-run-configurations>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -49,28 +50,35 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gennaro/code/AdventOfCode/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last.edited.regexp": "\\\\x48",
+    "last_opened_file_path": "C:/Users/gennaro/code/AdventOfCode/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.19195402",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dev.coppola.adventofcode.Y2015" />
@@ -85,8 +93,8 @@
       <recent name="dev.coppola.adventofcode.Y2015" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.D7Test">
-    <configuration name="D7Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.D9Test.part1">
+    <configuration name="D2Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -95,14 +103,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D2Test" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D7Test.andOpTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="D8Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +118,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
-      <option name="METHOD_NAME" value="andOpTests" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D8Test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="D8Test.testDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.coppola.adventofcode.Y2015.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D8Test" />
+      <option name="METHOD_NAME" value="testDemo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D7Test.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="D9Test.part1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -127,14 +149,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D9Test" />
       <option name="METHOD_NAME" value="part1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="D7Test.part2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="D9Test.testCommandProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -143,23 +165,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
-      <option name="METHOD_NAME" value="part2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D7Test.testCommandProcessing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.coppola.adventofcode.Y2015.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dev.coppola.adventofcode.Y2015" />
-      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D7Test" />
+      <option name="MAIN_CLASS_NAME" value="dev.coppola.adventofcode.Y2015.D9Test" />
       <option name="METHOD_NAME" value="testCommandProcessing" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.D7Test" />
-        <item itemvalue="JUnit.D7Test.part2" />
-        <item itemvalue="JUnit.D7Test.testCommandProcessing" />
-        <item itemvalue="JUnit.D7Test.part1" />
-        <item itemvalue="JUnit.D7Test.andOpTests" />
+        <item itemvalue="JUnit.D9Test.part1" />
+        <item itemvalue="JUnit.D9Test.testCommandProcessing" />
+        <item itemvalue="JUnit.D8Test.testDemo" />
+        <item itemvalue="JUnit.D8Test" />
+        <item itemvalue="JUnit.D2Test" />
       </list>
     </recent_temporary>
   </component>
@@ -196,11 +202,49 @@
       <workItem from="1688749256564" duration="2802000" />
       <workItem from="1695620369344" duration="1288000" />
       <workItem from="1695621995525" duration="2000" />
-      <workItem from="1695622851676" duration="7272000" />
+      <workItem from="1695622851676" duration="8204000" />
+      <workItem from="1695828294985" duration="2662000" />
+      <workItem from="1695879684170" duration="4723000" />
+      <workItem from="1695916529915" duration="2898000" />
+      <workItem from="1695920318856" duration="511000" />
+      <workItem from="1696087744056" duration="1138000" />
+      <workItem from="1696091870016" duration="272000" />
+      <workItem from="1696269888425" duration="990000" />
+      <workItem from="1696339340869" duration="634000" />
     </task>
+    <task id="LOCAL-00001" summary="added 2015 - day 7 complete">
+      <option name="closed" value="true" />
+      <created>1695631288698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695631288699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added 2015 - 1 to 6" />
+    <MESSAGE value="added 2015 - day 7 complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 2015 - day 7 complete" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D8.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D9.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

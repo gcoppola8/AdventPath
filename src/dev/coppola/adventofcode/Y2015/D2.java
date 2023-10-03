@@ -49,13 +49,4 @@ public class D2 {
     private long calcBox(int l, int w, int h) {
         return 2*l*w + 2*w*h + 2*h*l;
     }
-
-    public Stream<String> readFile(String fileName) {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("resources" + File.separator + fileName));
-            return bufferedReader.lines();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }
