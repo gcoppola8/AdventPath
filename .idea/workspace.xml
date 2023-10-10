@@ -5,17 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a302cf36-036a-4716-9165-72a0f2ec22bb" name="Changes" comment="added 2015 - day 7 complete">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_commons_text.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jgrapht_core.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/2015_9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D9Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/filesorted.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/coppola/adventofcode/Y2015/D2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/build.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D4Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D6Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D7Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/adventofcode/Y2015/D9Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/crackingcodeinterview/Chapter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/coppola/crackingcodeinterview/Chapter1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +75,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Rebasing master",
     "ignore.virus.scanning.warn.message": "true",
     "last.edited.regexp": "\\\\x48",
     "last_opened_file_path": "C:/Users/gennaro/code/AdventOfCode/resources",
@@ -225,6 +237,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added 2015 - 1 to 6" />
