@@ -1,6 +1,9 @@
 package gclist
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 type Node struct {
 	data int
@@ -238,4 +241,16 @@ func sumListsRec(l1 *Node, l2 *Node, carry int) *Node {
 
 	return &Node{n, sumListsRec(l1, l2, carry)}
 
+}
+
+func isPalindrome(list *LinkedList) bool {
+	buff := &LinkedList{nil, 0}
+	curr := list.head
+
+	for curr != nil {
+		buff.insert(curr.data)
+		curr = curr.next
+	}
+
+	return reflect.DeepEqual(buff, list)
 }

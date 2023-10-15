@@ -189,3 +189,40 @@ func TestSumLists(t *testing.T) {
 		t.Errorf("sumLists(%v, %v) = %v, expected %v", list1, list2, result, expected)
 	}
 }
+
+func TestPalindrome(t *testing.T) {
+	list1 := &LinkedList{nil, 0}
+
+	list1.insert(1)
+	list1.insert(1)
+	list1.insert(1)
+
+	if !isPalindrome(list1) {
+		t.Errorf("Error in isPalindrome, list is not palindrome")
+	}
+
+	listNotPalindrome := &LinkedList{nil, 0}
+	listNotPalindrome.insert(1)
+	listNotPalindrome.insert(2)
+	listNotPalindrome.insert(3)
+
+	if isPalindrome(listNotPalindrome) {
+		t.Errorf("Error in isPalindrome, list is palindrome")
+	}
+
+	listNotPalindrome2 := &LinkedList{nil, 0}
+	listNotPalindrome2.insert(1)
+	listNotPalindrome2.insert(2)
+	listNotPalindrome2.insert(3)
+	listNotPalindrome2.insert(3)
+	listNotPalindrome2.insert(3)
+	listNotPalindrome2.insert(3)
+	listNotPalindrome2.insert(9)
+	listNotPalindrome2.insert(11)
+	listNotPalindrome2.insert(13)
+
+	if isPalindrome(listNotPalindrome2) {
+		t.Errorf("Error in isPalindrome, list is palindrome")
+	}
+
+}
