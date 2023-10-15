@@ -1,6 +1,7 @@
 package gclist
 
 import (
+	"reflect"
 	"testing"
 )
 
@@ -159,5 +160,32 @@ func TestPartition(t *testing.T) {
 		}
 
 		curr = curr.next
+	}
+}
+
+func TestSumLists(t *testing.T) {
+	list1 := &LinkedList{nil, 0}
+	list1.insert(3)
+	list1.insert(2)
+	list1.insert(1)
+
+	list2 := &LinkedList{nil, 0}
+	list2.insert(6)
+	list2.insert(5)
+	list2.insert(4)
+
+	expected := &LinkedList{nil, 0}
+	expected.insert(9)
+	expected.insert(7)
+	expected.insert(5)
+
+	result := sumLists(list1, list2)
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("sumLists(%v, %v) = %v, expected %v", list1, list2, result, expected)
+	}
+
+	result.head = sumListsRec(list1.head, list2.head, 0)
+	if !reflect.DeepEqual(result, expected) {
+		t.Errorf("sumLists(%v, %v) = %v, expected %v", list1, list2, result, expected)
 	}
 }

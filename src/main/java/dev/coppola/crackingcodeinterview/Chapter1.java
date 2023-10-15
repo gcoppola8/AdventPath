@@ -294,7 +294,10 @@ public class Chapter1 {
         }
 
         if (str1.length() == str2.length() && !str1.isEmpty()) {
-
+            String str1str1 = str1 + str1;
+            return str1str1.contains(str2);
         }
+
+        return false;
     }
 }

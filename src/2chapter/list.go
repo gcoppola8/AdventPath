@@ -163,3 +163,79 @@ func (l *LinkedList) String() string {
 
 	return s[:len(s)-4]
 }
+
+func (l *LinkedList) Reverse() {
+	buff := &LinkedList{nil, 0}
+
+	curr := l.head
+
+	for curr != nil {
+
+		buff.insert(curr.data)
+
+		curr = curr.next
+	}
+
+	l.head = buff.head
+}
+
+func sumLists(l1 *LinkedList, l2 *LinkedList) *LinkedList {
+	result := &LinkedList{nil, 0}
+
+	curr1 := l1.head
+	curr2 := l2.head
+
+	carry := 0
+
+	for curr1 != nil || curr2 != nil {
+		n := 0
+
+		if curr1 != nil {
+			n += curr1.data
+			curr1 = curr1.next
+		}
+
+		if curr2 != nil {
+			n += curr2.data
+			curr2 = curr2.next
+		}
+
+		n += carry
+
+		if n >= 10 {
+			carry = 1
+			n %= 10
+		} else {
+			carry = 0
+		}
+
+		result.insert(n)
+	}
+
+	result.Reverse()
+
+	return result
+}
+
+func sumListsRec(l1 *Node, l2 *Node, carry int) *Node {
+	if l1 == nil && l2 == nil && carry == 0 {
+		return nil
+	}
+
+	n := carry
+	if l1 != nil {
+		n += l1.data
+		l1 = l1.next
+	}
+
+	if l2 != nil {
+		n += l2.data
+		l2 = l2.next
+	}
+
+	carry = n / 10
+	n %= 10
+
+	return &Node{n, sumListsRec(l1, l2, carry)}
+
+}
