@@ -1,12 +1,16 @@
 package dev.coppola.crackingcodeinterview;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Chapter1Test {
 
-    Chapter1 chapter1 = new Chapter1();
+    private final static Chapter1 chapter1 = new Chapter1();
+    private final static Logger logger = LogManager.getLogger(Chapter1Test.class);
+
 
     @Test
     public void testIsUnique() {
@@ -78,4 +82,82 @@ public class Chapter1Test {
     }
 
 
+    @Test
+    public void testRotateMatrix() {
+        int[][] testMat = new int[][]{
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5}
+        };
+
+        int[][] expectedMat = new int[][]{
+                {1, 1, 1, 1, 1},
+                {2, 2, 2, 2, 2},
+                {3, 3, 3, 3, 3},
+                {4, 4, 4, 4, 4},
+                {5, 5, 5, 5, 5}
+        };
+
+        chapter1.rotateMatrix(testMat);
+
+        logger.info("--------");
+        for (int i = 0; i < 5; i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < 5; j++) {
+                sb.append(testMat[i][j]).append(" ");
+            }
+            logger.info(sb.toString());
+        }
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                assertEquals(expectedMat[i][j], testMat[i][j]);
+            }
+        }
+    }
+
+    @Test
+    public void testZeroMatrix() {
+        int[][] testMat = new int[][]{
+                {1, 2, 0, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 0, 3, 4, 5},
+                {1, 2, 3, 4, 5},
+                {1, 2, 3, 4, 5}
+        };
+
+        int[][] expectedMat = new int[][]{
+                {0, 0, 0, 0, 0},
+                {1, 0, 0, 4, 5},
+                {0, 0, 0, 0, 0},
+                {1, 0, 0, 4, 5},
+                {1, 0, 0, 4, 5}
+        };
+
+        chapter1.zeroMatrix(testMat);
+
+        logger.info("--------");
+        for (int i = 0; i < 5; i++) {
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < 5; j++) {
+                sb.append(testMat[i][j]).append(" ");
+            }
+            logger.info(sb.toString());
+        }
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                assertEquals(expectedMat[i][j], testMat[i][j]);
+            }
+        }
+
+    }
+
+    @Test
+    public void testStringRotation() {
+        assertTrue(chapter1.isStringRotation("il cane amico", "micoil cane a"));
+        assertFalse(chapter1.isStringRotation("cane", "arancia"));
+    }
 }
