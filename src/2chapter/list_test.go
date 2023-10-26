@@ -224,5 +224,125 @@ func TestPalindrome(t *testing.T) {
 	if isPalindrome(listNotPalindrome2) {
 		t.Errorf("Error in isPalindrome, list is palindrome")
 	}
+}
 
+func TestIntersecate(t *testing.T) {
+	list1 := &LinkedList{nil, 0}
+
+	list1.insert(1)
+	list1.insert(2)
+	list1.insert(3)
+	list1.insert(4)
+	list1.insert(5)
+	list1.insert(6)
+	list1.insert(7)
+	list1.insert(8)
+	list1.insert(9)
+
+	list2 := &LinkedList{nil, 0}
+	list2.head = list1.head.next.next.next.next
+
+	list3 := intersacate(list1, list2)
+
+	if list3 == nil {
+		t.Errorf("Error in intersacate, lists is nil")
+	}
+
+	if list3.head != list2.head {
+		t.Errorf("Error in intersacate, lists are not intersacated")
+	}
+
+	list4 := &LinkedList{nil, 0}
+	list3 = intersacate(list1, list4)
+
+	if list3 != nil {
+		t.Errorf("Error in intersacate, lists is not nil")
+	}
+}
+
+func TestFindCycle(t *testing.T) {
+	// Create a linked list with a cycle
+	l1 := &LinkedList{nil, 0}
+	node1 := &Node{1, nil}
+	node2 := &Node{2, nil}
+	node3 := &Node{3, nil}
+	node4 := &Node{4, nil}
+	node5 := &Node{5, nil}
+	node6 := &Node{6, nil}
+	node7 := &Node{7, nil}
+	node8 := &Node{8, nil}
+	node9 := &Node{9, nil}
+	node10 := &Node{10, nil}
+	node11 := &Node{11, nil}
+	node12 := &Node{12, nil}
+	node13 := &Node{13, nil}
+	node14 := &Node{14, nil}
+	node15 := &Node{15, nil}
+	node16 := &Node{16, nil}
+	node17 := &Node{17, nil}
+	node18 := &Node{18, nil}
+	node19 := &Node{19, nil}
+	node20 := &Node{20, nil}
+	node21 := &Node{21, nil}
+	node22 := &Node{22, nil}
+	node23 := &Node{23, nil}
+	node24 := &Node{24, nil}
+	node25 := &Node{25, nil}
+	node26 := &Node{26, nil}
+	node27 := &Node{27, nil}
+	node28 := &Node{28, nil}
+	node29 := &Node{29, nil}
+	node30 := &Node{30, nil}
+
+	l1.head = node1
+	node1.next = node2
+	node2.next = node3
+	node3.next = node4
+	node4.next = node5
+	node5.next = node6
+	node6.next = node7
+	node7.next = node8
+	node8.next = node9
+	node9.next = node10
+	node10.next = node11
+	node11.next = node12
+	node12.next = node13
+	node13.next = node14
+	node14.next = node15
+	node15.next = node16
+	node16.next = node17
+	node17.next = node18
+	node18.next = node19
+	node19.next = node20
+	node20.next = node21
+	node21.next = node22
+	node22.next = node23
+	node23.next = node24
+	node24.next = node25
+	node25.next = node26
+	node26.next = node27
+	node27.next = node28
+	node28.next = node29
+	node29.next = node30
+	node30.next = node10
+
+	// Test the function
+	cycleStart := findCycle(l1)
+	if cycleStart != node10 {
+		t.Errorf("findCycle returned %v, expected %v", cycleStart, node10)
+	}
+
+	// Test a linked list without a cycle
+	l2 := &LinkedList{nil, 0}
+	l2.insert(1)
+	l2.insert(2)
+	l2.insert(3)
+	l2.insert(4)
+	l2.insert(5)
+	l2.insert(6)
+	l2.insert(7)
+	cycleStart = findCycle(l2)
+	if cycleStart != nil {
+		t.Errorf("findCycle returned %v, expected nil", cycleStart)
+	}
 }

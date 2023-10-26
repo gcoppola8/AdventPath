@@ -254,3 +254,42 @@ func isPalindrome(list *LinkedList) bool {
 
 	return reflect.DeepEqual(buff, list)
 }
+
+func intersacate(l1 *LinkedList, l2 *LinkedList) *LinkedList {
+	curr1 := l1.head
+
+	for curr1 != nil {
+
+		curr2 := l2.head
+
+		for curr2 != nil {
+			if curr1 == curr2 {
+				return &LinkedList{curr1, 1}
+			}
+
+			curr2 = curr2.next
+		}
+
+		curr1 = curr1.next
+	}
+
+	return nil
+}
+
+func findCycle(l1 *LinkedList) *Node {
+	m := make(map[*Node]bool)
+
+	curr := l1.head
+	for curr != nil {
+
+		if m[curr] {
+			return curr
+		} else {
+			m[curr] = true
+		}
+
+		curr = curr.next
+	}
+
+	return nil
+}

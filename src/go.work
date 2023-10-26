@@ -1,0 +1,4 @@
+go 1.21.3
+
+use ./2chapter
+use ./3chapter
