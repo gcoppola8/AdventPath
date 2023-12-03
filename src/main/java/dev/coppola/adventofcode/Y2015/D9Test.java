@@ -22,11 +22,12 @@ public class D9Test {
     @Test
     void part1() {
         D9 d9 = new D9();
-        assertEquals("", d9.part1(Utils.readFileAsStream("2015_9.txt")));
+        assertEquals("141", d9.part1(Utils.readFileAsStream("2015_9.txt")));
     }
 
     @Test
     void part2() {
         D9 d9 = new D9();
+        assertEquals("736", d9.part2(Utils.readFileAsStream("2015_9.txt")));
     }
 }

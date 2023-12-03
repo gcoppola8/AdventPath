@@ -1,19 +1,15 @@
 package dev.coppola.adventofcode;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import com.google.common.base.Charsets;
+
+import java.io.*;
+import java.nio.charset.Charset;
 import java.util.stream.Stream;
 
 public class Utils {
 
     public static Stream<String> readFileAsStream(String fileName) {
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("resources" + File.separator + fileName));
-            return bufferedReader.lines();
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+        return new BufferedReader(new InputStreamReader(classloader.getResourceAsStream(fileName), Charsets.UTF_8)).lines();
     }
 }
